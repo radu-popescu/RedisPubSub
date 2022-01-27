@@ -5,7 +5,7 @@ namespace Publisher.API
     public static class PublisherClass
     {
 
-        public static string Message { get; } = "Hello there Radu";
+        public static string Message { get; } = "I need resources for task_1";
 
         public static void PublishMessage() 
         {
