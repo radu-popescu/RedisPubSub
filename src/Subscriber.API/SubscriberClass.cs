@@ -10,8 +10,8 @@ namespace Subscriber.API
             ISubscriber subscriber = redis.GetSubscriber();
 
             subscriber.Subscribe("redischannel", (channel, message) => 
-            { 
-                Console.WriteLine(message); 
+            {
+                File.WriteAllBytes("D:\\mynewimage.jpg", message); 
             });
         }
 
